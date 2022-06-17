@@ -1,0 +1,53 @@
+:root {
+  --main-text-color: #212121;
+
+  --secondary-text-color: #757575;
+
+  --accent-color: #2196f3;
+
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+
+  color: var(--main-text-color);
+
+  font-family: "Roboto";
+}
+
+/*Логотип*/
+
+.logo {
+  color: #212121;
+}
+
+.accent {
+  color: #2196f3;
+}
+
+/*Шапка сайта*/
+
+.site-nav .link {
+  color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+/*Герой*/
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero .subject {
+  color: #ffffff;
+}
+
+.hero .button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
