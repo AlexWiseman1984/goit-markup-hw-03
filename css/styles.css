@@ -233,7 +233,7 @@ body {
   display: flex;
 }
 
-.link-container .item {
+.link-container .filter {
   align-items: center;
 }
 
@@ -346,8 +346,27 @@ body {
 
 /*section portfolio*/
 
-.filter list .item {
+.link-container {
+  margin-right: auto;
+  margin-left: 495px;
+  width: 1200px;
   display: flex;
+}
+
+.section-content .list {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .img-element {
+  margin-right: 30px;
+}
+
+.img-element:nth-child(3n) {
+  margin-right: 0;
 }
 
 .more {
