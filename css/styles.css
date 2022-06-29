@@ -208,17 +208,16 @@ body {
 
 /*Section 2*/
 
+.container-all li {
+  margin-right: 30px;
+}
+
+.container-all li:nth-child(3n) {
+  margin-right: 0;
+}
+
 .heading {
   padding-top: 94px;
-}
-
-.container .list-icon {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.section-icon .list {
-  padding-top: 50px;
 }
 
 .section .list {
@@ -237,10 +236,11 @@ body {
   margin-top: 94px;
 }
 
-/*Sectio 1*/
+/*Section 1*/
 .hidden {
   display: none;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -274,15 +274,13 @@ body {
 
 .team-container .list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .team-container li {
   margin-right: 30px;
 }
 
-/*Now Doesn't work*/
-.team-container:nth-child(4n) {
+.team-container li:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -339,6 +337,14 @@ body {
 }
 
 /*section portfolio*/
+
+.img-container li {
+  margin-right: 30px;
+}
+
+.img-container li:nth-child(3n) {
+  margin-right: 0;
+}
 
 .link-container {
   margin-right: auto;
