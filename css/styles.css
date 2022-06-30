@@ -60,6 +60,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
+  padding: 0 15px;
 }
 
 /*Логотип*/
@@ -81,14 +82,15 @@ body {
 /*Main Nav*/
 
 .page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container.header-container {
   display: flex;
   align-items: center;
-  width: 1600px;
 }
 
 .main-nav {
-  margin-top: 32px;
-  margin-bottom: 32px;
   display: flex;
   align-items: center;
 }
@@ -106,7 +108,7 @@ body {
   margin-left: 93px;
 }
 
-.site-nav li {
+.site-nav li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -125,15 +127,13 @@ body {
 }
 
 /*auth-nav*/
-.link-nav {
-  margin-left: auto;
-}
 
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 
-.auth-nav li {
+.auth-nav li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -172,11 +172,8 @@ body {
 }
 
 .hero {
-  height: 696px;
   padding-top: 200px;
-  padding-right: 452px;
   padding-bottom: 280px;
-  padding-left: 452px;
 }
 
 .subject {
@@ -199,6 +196,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.hero .button {
+  width: 200px;
+  height: 50px;
+}
+
 .button {
   border: 2px;
   margin-top: 30px;
@@ -208,16 +210,25 @@ body {
 
 /*Section 2*/
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits {
+  padding-bottom: 0;
+}
+
+.container-all {
+  margin-top: 50px;
+}
+
 .container-all li {
   margin-right: 30px;
 }
 
 .container-all li:nth-child(3n) {
   margin-right: 0;
-}
-
-.heading {
-  padding-top: 94px;
 }
 
 .section .list {
@@ -232,14 +243,7 @@ body {
   margin-right: 30px;
 }
 
-.section {
-  margin-top: 94px;
-}
-
 /*Section 1*/
-.hidden {
-  display: none;
-}
 
 .section-title {
   font-weight: 700;
@@ -338,6 +342,15 @@ body {
 
 /*section portfolio*/
 
+.hidden {
+  display: none;
+}
+
+.container .filter {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .img-container li {
   margin-right: 30px;
 }
@@ -347,9 +360,6 @@ body {
 }
 
 .link-container {
-  margin-right: auto;
-  margin-left: 495px;
-  width: 1200px;
   display: flex;
 }
 
@@ -361,7 +371,7 @@ body {
   flex-wrap: wrap;
 }
 
-/*1st html*/
+/*2nd html*/
 
 .more {
   color: #212121;
@@ -385,9 +395,6 @@ body {
 
 .page-footer {
   margin-top: 94px;
-  padding-top: 60px;
-  margin-bottom: 60px;
-  padding-left: 215px;
   background: #2f303a;
 }
 
@@ -403,4 +410,8 @@ body {
 
 .page-footer .logo {
   color: #ffffff;
+}
+
+.page-footer .container {
+  padding-top: 60px;
 }
