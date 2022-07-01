@@ -166,7 +166,6 @@ body {
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -177,8 +176,11 @@ body {
 }
 
 .subject {
+  width: 696px;
   text-align: center;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Button */
@@ -243,7 +245,7 @@ body {
   margin-right: 30px;
 }
 
-/*Section 1*/
+/*Section Team*/
 
 .section-title {
   font-weight: 700;
@@ -276,6 +278,10 @@ body {
 
 /*Section Team*/
 
+.section-team {
+  background-color: #f5f4fa;
+}
+
 .team-container .list {
   display: flex;
 }
@@ -284,11 +290,22 @@ body {
   margin-right: 30px;
 }
 
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team .team-container {
+  padding-top: 50px;
+}
+
 .team-container li:nth-child(4n) {
   margin-right: 0;
 }
 
 .heading {
+  margin-bottom: 0;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -391,10 +408,21 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list .user {
+  padding-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.list .text {
+  padding-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 /* Footer*/
 
 .page-footer {
-  margin-top: 94px;
   background: #2f303a;
 }
 
@@ -414,4 +442,20 @@ body {
 
 .page-footer .container {
   padding-top: 60px;
+  padding-bottom: 161px;
+}
+
+.address-container .auth-nav {
+  flex-direction: column;
+  padding-top: 9px;
+  gap: 9px;
+}
+
+.address-container {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.page-footer .container {
+  padding-bottom: 0;
 }
